@@ -1,0 +1,310 @@
+!SESSION 2025-08-22 19:25:38.741 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-08-22 19:26:35.114
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-08-22 19:26:35.115
+!MESSAGE Log4j2 initialized with config file C:\Users\Banuka\Desktop\OmniTrone\OmniDirectionalRobot-EN2160\Software\MotorController\Motor_controller\.metadata\.log4j2.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-08-22 19:26:36.910
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Banuka'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-08-22 19:26:39.646
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.core.jobs 2 2 2025-08-22 19:26:48.467
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.ui.internal.Workbench$39 RUNNING
+	 at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	 at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027)
+	 at org.eclipse.osgi.internal.loader.ModuleClassLoader.defineClass(ModuleClassLoader.java:293)
+	 at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.defineClass(ClasspathManager.java:774)
+	 at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findClassImpl(ClasspathManager.java:691)
+	 at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClassImpl(ClasspathManager.java:657)
+	 at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClassImpl(ClasspathManager.java:637)
+	 at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:616)
+	 at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:348)
+	 at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:414)
+	 at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:520)
+	 at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	 at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	 at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	 at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	 at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3578)
+	 at java.base/java.lang.Class.getMethodsRecursive(Class.java:3719)
+	 at java.base/java.lang.Class.getMethod0(Class.java:3705)
+	 at java.base/java.lang.Class.getMethod(Class.java:2393)
+	 at com.teamdev.jxbrowser.deps.com.google.protobuf.GeneratedMessageV3.getMethodOrDie(GeneratedMessageV3.java:1926)
+	 at com.teamdev.jxbrowser.deps.com.google.protobuf.GeneratedMessageV3.access$1000(GeneratedMessageV3.java:79)
+	 at com.teamdev.jxbrowser.deps.com.google.protobuf.GeneratedMessageV3$FieldAccessorTable$SingularMessageFieldAccessor.<init>(GeneratedMessageV3.java:3059)
+	 at com.teamdev.jxbrowser.deps.com.google.protobuf.GeneratedMessageV3$FieldAccessorTable.ensureFieldAccessorsInitialized(GeneratedMessageV3.java:2052)
+	 at com.teamdev.jxbrowser.net.internal.rpc.InterceptRequest.internalGetFieldAccessorTable(InterceptRequest.java:45)
+	 at com.teamdev.jxbrowser.deps.com.google.protobuf.GeneratedMessageV3.getDescriptorForType(GeneratedMessageV3.java:133)
+	 at com.teamdev.jxbrowser.internal.rpc.stream.CallbackStream.createSubscriptionRequest(CallbackStream.java:98)
+	 at com.teamdev.jxbrowser.internal.rpc.stream.Stream.subscribe(Stream.java:88)
+	 at com.teamdev.jxbrowser.internal.rpc.stream.CallbackStream.set(CallbackStream.java:64)
+	 at com.teamdev.jxbrowser.internal.rpc.ServiceConnectionImpl.set(ServiceConnectionImpl.java:107)
+	 at com.teamdev.jxbrowser.internal.rpc.UniversalServiceConnection.set(UniversalServiceConnection.java:120)
+	 at com.teamdev.jxbrowser.net.internal.NetworkImpl.initialize(NetworkImpl.java:72)
+	 at com.teamdev.jxbrowser.profile.internal.ProfileImpl.<init>(ProfileImpl.java:112)
+	 at com.teamdev.jxbrowser.profile.internal.ProfilesImpl.lambda$new$0(ProfilesImpl.java:41)
+	 at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	 at java.base/java.util.Collections$UnmodifiableCollection.forEach(Collections.java:1116)
+	 at com.teamdev.jxbrowser.profile.internal.ProfilesImpl.<init>(ProfilesImpl.java:40)
+	 at com.teamdev.jxbrowser.engine.internal.EngineImpl.<init>(EngineImpl.java:348)
+	 at com.teamdev.jxbrowser.engine.internal.EngineImpl.newInstance(EngineImpl.java:291)
+	 at com.teamdev.jxbrowser.engine.Engine.newInstance(Engine.java:163)
+	 at com.st.components.swing.JxBrowserEngine.initBrowser(JxBrowserEngine.java:155)
+	 at com.st.components.swing.JxBrowserEngine.<init>(JxBrowserEngine.java:61)
+	 at com.st.components.swing.JxBrowserEngine.getInstance(JxBrowserEngine.java:125)
+	 at com.st.microxplorer.plugins.userauth.WebApp.<init>(WebApp.java:165)
+	 at com.st.microxplorer.plugins.userauth.WebApp.getInstance(WebApp.java:779)
+	 at com.st.microxplorer.plugins.userauth.UserAuth.getBrowserView(UserAuth.java:489)
+	 at com.st.microxplorer.plugins.userauth.UserAuth.checkInfile(UserAuth.java:251)
+	 at com.st.microxplorer.plugins.userauth.UserAuth.activatePlugin(UserAuth.java:169)
+	 at com.st.stm32cube.common.mx.userauth.UserAuthAdapter.<init>(UserAuthAdapter.java:29)
+	 at com.st.stm32cube.common.mx.userauth.UserAuthProvider.getUserAuthAdapter(UserAuthProvider.java:16)
+	 at com.st.stm32cube.common.ecosystemintegration.ui.core.MCUEcoSystemIntegrationUiHelper.getUserAuth(MCUEcoSystemIntegrationUiHelper.java:100)
+	 at com.st.stm32cube.ide.mcu.userauth.UserAuthStartup.earlyStartup(UserAuthStartup.java:32)
+	 at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:79)
+	 at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	 at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	 at org.eclipse.ui.internal.Workbench$39.run(Workbench.java:2733)
+	 at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2025-08-22 19:37:38.102 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  C:\Users\Banuka\Desktop\OmniTrone\OmniDirectionalRobot-EN2160\Software\MotorController\Motor_controller\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\Banuka\Desktop\OmniTrone\OmniDirectionalRobot-EN2160\Software\MotorController\Motor_controller\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-08-22 19:38:02.150
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-08-22 19:38:02.151
+!MESSAGE Log4j2 initialized with config file C:\Users\Banuka\Desktop\OmniTrone\OmniDirectionalRobot-EN2160\Software\MotorController\Motor_controller\.metadata\.log4j2.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-08-22 19:38:04.101
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Banuka'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-08-22 19:38:06.335
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.equinox.p2.updatechecker 4 0 2025-08-22 19:38:36.065
+!MESSAGE Exception in update check thread
+!STACK 0
+java.lang.IllegalStateException: bundle org.eclipse.equinox.p2.repository is not started
+	at org.eclipse.equinox.internal.p2.repository.Activator.getContext(Activator.java:65)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.restoreFromSystemProperty(AbstractRepositoryManager.java:1031)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.restoreRepositories(AbstractRepositoryManager.java:1051)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.getRepositoryProperty(AbstractRepositoryManager.java:583)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:715)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:164)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:144)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:83)
+
+!ENTRY org.eclipse.core.jobs 2 2 2025-08-22 19:38:36.370
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.ui.internal.Workbench$39 RUNNING
+	 at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	 at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027)
+	 at org.eclipse.osgi.internal.loader.ModuleClassLoader.defineClass(ModuleClassLoader.java:293)
+	 at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.defineClass(ClasspathManager.java:774)
+	 at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findClassImpl(ClasspathManager.java:691)
+	 at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClassImpl(ClasspathManager.java:657)
+	 at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClassImpl(ClasspathManager.java:637)
+	 at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:616)
+	 at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:348)
+	 at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:414)
+	 at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:520)
+	 at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	 at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	 at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	 at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	 at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3578)
+	 at java.base/java.lang.Class.getMethodsRecursive(Class.java:3719)
+	 at java.base/java.lang.Class.getMethod0(Class.java:3705)
+	 at java.base/java.lang.Class.getMethod(Class.java:2393)
+	 at com.teamdev.jxbrowser.deps.com.google.protobuf.GeneratedMessageV3.getMethodOrDie(GeneratedMessageV3.java:1926)
+	 at com.teamdev.jxbrowser.deps.com.google.protobuf.GeneratedMessageV3.access$1000(GeneratedMessageV3.java:79)
+	 at com.teamdev.jxbrowser.deps.com.google.protobuf.GeneratedMessageV3$FieldAccessorTable$SingularFieldAccessor$ReflectionInvoker.<init>(GeneratedMessageV3.java:2261)
+	 at com.teamdev.jxbrowser.deps.com.google.protobuf.GeneratedMessageV3$FieldAccessorTable$SingularFieldAccessor.<init>(GeneratedMessageV3.java:2334)
+	 at com.teamdev.jxbrowser.deps.com.google.protobuf.GeneratedMessageV3$FieldAccessorTable$SingularMessageFieldAccessor.<init>(GeneratedMessageV3.java:3056)
+	 at com.teamdev.jxbrowser.deps.com.google.protobuf.GeneratedMessageV3$FieldAccessorTable.ensureFieldAccessorsInitialized(GeneratedMessageV3.java:2052)
+	 at com.teamdev.jxbrowser.os.internal.rpc.OpenMemory.internalGetFieldAccessorTable(OpenMemory.java:43)
+	 at com.teamdev.jxbrowser.deps.com.google.protobuf.GeneratedMessageV3.getDescriptorForType(GeneratedMessageV3.java:133)
+	 at com.teamdev.jxbrowser.internal.rpc.stream.CallbackStream.createSubscriptionRequest(CallbackStream.java:98)
+	 at com.teamdev.jxbrowser.internal.rpc.stream.Stream.subscribe(Stream.java:88)
+	 at com.teamdev.jxbrowser.internal.rpc.stream.CallbackStream.set(CallbackStream.java:64)
+	 at com.teamdev.jxbrowser.internal.rpc.ServiceConnectionImpl.set(ServiceConnectionImpl.java:107)
+	 at com.teamdev.jxbrowser.internal.memory.SharedMemoryManager.onGpuConnectionCreated(SharedMemoryManager.java:72)
+	 at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	 at com.teamdev.jxbrowser.internal.memory.SharedMemoryManager.<init>(SharedMemoryManager.java:59)
+	 at com.teamdev.jxbrowser.internal.memory.SharedMemoryManager.newInstance(SharedMemoryManager.java:45)
+	 at com.teamdev.jxbrowser.engine.internal.EngineImpl.<init>(EngineImpl.java:356)
+	 at com.teamdev.jxbrowser.engine.internal.EngineImpl.newInstance(EngineImpl.java:291)
+	 at com.teamdev.jxbrowser.engine.Engine.newInstance(Engine.java:163)
+	 at com.st.components.swing.JxBrowserEngine.initBrowser(JxBrowserEngine.java:155)
+	 at com.st.components.swing.JxBrowserEngine.<init>(JxBrowserEngine.java:61)
+	 at com.st.components.swing.JxBrowserEngine.getInstance(JxBrowserEngine.java:125)
+	 at com.st.microxplorer.plugins.userauth.WebApp.<init>(WebApp.java:165)
+	 at com.st.microxplorer.plugins.userauth.WebApp.getInstance(WebApp.java:779)
+	 at com.st.microxplorer.plugins.userauth.UserAuth.getBrowserView(UserAuth.java:489)
+	 at com.st.microxplorer.plugins.userauth.UserAuth.checkInfile(UserAuth.java:251)
+	 at com.st.microxplorer.plugins.userauth.UserAuth.activatePlugin(UserAuth.java:169)
+	 at com.st.stm32cube.common.mx.userauth.UserAuthAdapter.<init>(UserAuthAdapter.java:29)
+	 at com.st.stm32cube.common.mx.userauth.UserAuthProvider.getUserAuthAdapter(UserAuthProvider.java:16)
+	 at com.st.stm32cube.common.ecosystemintegration.ui.core.MCUEcoSystemIntegrationUiHelper.getUserAuth(MCUEcoSystemIntegrationUiHelper.java:100)
+	 at com.st.stm32cube.ide.mcu.userauth.UserAuthStartup.earlyStartup(UserAuthStartup.java:32)
+	 at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:79)
+	 at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	 at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	 at org.eclipse.ui.internal.Workbench$39.run(Workbench.java:2733)
+	 at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2025-08-22 19:38:44.725 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  C:\Users\Banuka\Desktop\OmniTrone\OmniDirectionalRobot-EN2160\Software\MotorController\Motor_controller\.cproject
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\Banuka\Desktop\OmniTrone\OmniDirectionalRobot-EN2160\Software\MotorController\Motor_controller\.cproject
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-08-22 19:38:58.208
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-08-22 19:38:58.210
+!MESSAGE Log4j2 initialized with config file C:\Users\Banuka\Desktop\OmniTrone\OmniDirectionalRobot-EN2160\Software\MotorController\Motor_controller\.metadata\.log4j2.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-08-22 19:39:00.179
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Banuka'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-08-22 19:39:03.137
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 0 2025-08-22 19:39:29.768
+!MESSAGE Unexpected error loading extension: org.eclipse.equinox.p2.metadata.repository.compositeRepository
+!STACK 0
+java.lang.IllegalStateException: bundle org.eclipse.equinox.p2.repository is not started
+	at org.eclipse.equinox.internal.p2.repository.Activator.getContext(Activator.java:65)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.restoreFromSystemProperty(AbstractRepositoryManager.java:1031)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.restoreRepositories(AbstractRepositoryManager.java:1051)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.getRepositoryProperty(AbstractRepositoryManager.java:583)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:715)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:161)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:93)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:124)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:799)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:697)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:164)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:144)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:83)
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2025-08-22 19:39:29.772
+!MESSAGE No repository found at https://sw-center.st.com/stm32cubeide/openstlinux/updatesite1.
+!SESSION 2025-08-22 19:39:30.354 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\Banuka\Desktop\OmniTrone\OmniDirectionalRobot-EN2160\Software\MotorController\Motor_controller
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-08-22 19:39:40.110
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-08-22 19:39:40.116
+!MESSAGE Log4j2 initialized with config file C:\Users\Banuka\Desktop\OmniTrone\OmniDirectionalRobot-EN2160\Software\MotorController\Motor_controller\.metadata\.log4j2.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-08-22 19:39:42.782
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Banuka'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-08-22 19:39:55.084
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.equinox.p2.updatechecker 4 0 2025-08-22 19:40:17.283
+!MESSAGE Exception in update check thread
+!STACK 0
+java.lang.IllegalStateException: bundle org.eclipse.equinox.p2.repository is not started
+	at org.eclipse.equinox.internal.p2.repository.Activator.getContext(Activator.java:65)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.restoreFromSystemProperty(AbstractRepositoryManager.java:1031)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.restoreRepositories(AbstractRepositoryManager.java:1051)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.getRepositoryProperty(AbstractRepositoryManager.java:583)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:715)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:164)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:144)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:83)
+!SESSION 2025-08-22 19:40:52.626 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-08-22 19:41:05.986
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-08-22 19:41:05.988
+!MESSAGE Log4j2 initialized with config file C:\Users\Banuka\Desktop\OmniTrone\OmniDirectionalRobot-EN2160\Software\MotorController\Motor_controller\.metadata\.log4j2.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-08-22 19:41:08.145
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Banuka'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-08-22 19:41:10.532
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-08-22 19:46:08.032
+!MESSAGE Indexed 'omni_robot' (19 sources, 81 headers) in 2.73 sec: 4,555 declarations; 21,874 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0076%)
+!SESSION 2025-08-22 19:47:37.647 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data file:/C:/Users/Banuka/Desktop/OmniTrone/OmniDirectionalRobot-EN2160/Software/MotorController/Motor_controller/
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-08-22 19:47:43.476
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-08-22 19:47:43.476
+!MESSAGE Log4j2 initialized with config file C:\Users\Banuka\Desktop\OmniTrone\OmniDirectionalRobot-EN2160\Software\MotorController\Motor_controller\.metadata\.log4j2.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-08-22 19:47:46.408
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Banuka'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-08-22 19:47:48.756
+!MESSAGE Started RMI Server, listening on port 41337
