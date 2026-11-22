@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Omni Bot · Pi control</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="{{ url_for('static', filename='control.js') }}" defer></script>
+</head>
+<body>
+<main>
+  <header><div><p class="eyebrow">RASPBERRY PI 5</p><h1>Omni Bot</h1></div>
+    <span id="mode" class="badge">Connecting…</span></header>
+  <aside class="warning" role="note"><strong>No software emergency stop.</strong>
+    This firmware cannot stop a move over UART. Use the physical emergency stop.
+    Closing this page or disconnecting the Pi will not stop the robot.
+    Known braking and motion defects must be fixed before powered use.</aside>
+  <noscript><p class="warning">JavaScript is required. Controls remain disabled.</p></noscript>
+  <section aria-labelledby="move-title">
+    <h2 id="move-title">Discrete move</h2>
+    <p>Select a direction, then send one move. No hold-to-drive or automatic repeats.</p>
+    <form id="move-form">
+      <fieldset id="motion-controls" disabled>
+        <legend>Direction</legend>
+        <div class="directions">
+          <button type="button" data-direction="forward_left" aria-pressed="false">↖<span>Forward left</span></button>
+          <button type="button" data-direction="forward" aria-pressed="true">↑<span>Forward</span></button>
+          <button type="button" data-direction="forward_right" aria-pressed="false">↗<span>Forward right</span></button>
+          <button type="button" data-direction="left" aria-pressed="false">←<span>Left</span></button>
+          <div class="center" aria-hidden="true">OMNI</div>
+          <button type="button" data-direction="right" aria-pressed="false">→<span>Right</span></button>
+          <button type="button" data-direction="backward_left" aria-pressed="false">↙<span>Backward left</span></button>
+          <button type="button" data-direction="backward" aria-pressed="false">↓<span>Backward</span></button>
+          <button type="button" data-direction="backward_right" aria-pressed="false">↘<span>Backward right</span></button>
+        </div>
+        <div class="rotation">
+          <button type="button" data-direction="rotate_ccw" aria-pressed="false">↶ Rotate CCW</button>
+          <button type="button" data-direction="rotate_cw" aria-pressed="false">↷ Rotate CW</button>
+        </div>
+        <label for="value">Move value (raw firmware units)</label>
+        <input id="value" name="value" type="number" min="1" max="255" step="1" value="1" required aria-describedby="units">
+        <p id="units" class="muted">Integer 1–255. Not speed, centimeters, or degrees. Physical units are not calibrated.</p>
+      </fieldset>
+      <label id="ack-label" hidden><input type="checkbox" id="ack"> I have verified firmware safety fixes and a working physical emergency stop.</label>
+      <p id="selection">Selected: Forward</p>
+      <button id="send" type="submit" disabled>Send one move</button>
+    </form>
+    <p id="availability" class="muted">Waiting for backend status.</p>
+    <button id="inspect" type="button" hidden>I inspected the robot and resolved the uncertain move</button>
+    <p id="result" role="status" aria-live="polite">No move sent from this page.</p>
+    <p class="muted">Backward-left is disabled on hardware because the existing firmware executes the wrong direction.</p>
+  </section>
+  <section aria-labelledby="status-title">
+    <h2 id="status-title">Backend status</h2>
+    <dl><dt>State</dt><dd id="state">Unknown</dd>
+      <dt>UART</dt><dd id="uart">—</dd><dt>Last accepted command</dt><dd id="last">—</dd>
+      <dt>Fault</dt><dd id="fault">—</dd><dt>Last status update</dt><dd id="updated">—</dd></dl>
+    <h3>Raw telemetry</h3><pre id="telemetry">No telemetry yet.</pre>
+    <p class="muted">Firmware completion does not prove physical standstill. Simulation does not predict motion or test UART hardware.</p>
+  </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# NOT calibrated. Placeholder values are deliberately blocked by the launch.
+# Measure base_link -> laser translation in meters and roll/pitch/yaw in radians.
+# Set true only after a human has checked the measured transform and frame axes.
+mount_calibrated: false
+xyz: [0.0, 0.0, 0.0]
+rpy: [0.0, 0.0, 0.0]
