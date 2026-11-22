@@ -1,0 +1,9 @@
+[project]
+name = "omni-pi-backend"
+version = "0.1.0"
+description = "Raspberry Pi UART backend for the EN2160 robot"
+requires-python = ">=3.11"
+dependencies = ["Flask>=3.1,<4", "pyserial>=3.5,<4"]
+
+[tool.uv]
+package = false

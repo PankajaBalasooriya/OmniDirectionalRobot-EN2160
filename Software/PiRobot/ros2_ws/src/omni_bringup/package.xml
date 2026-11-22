@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>omni_bringup</name><version>0.1.0</version>
+  <description>Lidar-only bringup and standalone RViz for the omni robot.</description>
+  <maintainer email="maintainer@example.com">Omni Robot maintainers</maintainer>
+  <license>Apache-2.0</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+  <exec_depend>python3-yaml</exec_depend>
+  <exec_depend>launch</exec_depend><exec_depend>launch_ros</exec_depend>
+  <exec_depend>ament_index_python</exec_depend>
+  <exec_depend>sllidar_ros2</exec_depend><exec_depend>tf2_ros</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

@@ -1,0 +1,7 @@
+{
+  "ros_domain_id": 21,
+  "lidar_port": "/dev/serial/by-id/REPLACE_WITH_C1_USB_ADAPTER",
+  "motor_port": "/dev/REPLACE_WITH_VERIFIED_PI_HEADER_UART",
+  "mount_config": "ros2_ws/src/omni_bringup/config/lidar_mount.yaml",
+  "http_port": 5000
+}

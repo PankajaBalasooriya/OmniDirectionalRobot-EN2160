@@ -1,0 +1,17 @@
+ :root { color-scheme: dark; font-family: system-ui, sans-serif; background: #0d1520; color: #e8eef6; }
+* { box-sizing: border-box; } body { margin: 0; } main { max-width: 760px; margin: auto; padding: 24px 16px 48px; }
+header { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+h1 { margin: 0 0 20px; font-size: 2.4rem; } h2 { margin-top: 0; } h3 { font-size: 1rem; }
+.eyebrow { color: #75c9e5; font-size: .75rem; letter-spacing: .15em; }
+.badge { border: 1px solid #75c9e5; border-radius: 24px; padding: 8px 12px; }
+.warning { background: #382617; border: 1px solid #e7a348; border-radius: 12px; padding: 16px; line-height: 1.6; }
+.warning strong { display: block; } section { margin-top: 20px; background: #172231; border: 1px solid #314155; border-radius: 12px; padding: 20px; }
+p { line-height: 1.5; } .muted { color: #b3c1d2; font-size: .9rem; } fieldset { border: 0; padding: 0; margin: 0; } legend { margin-bottom: 12px; }
+.directions { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; } button { min-height: 48px; padding: 12px; background: #25384e; border: 1px solid #526b87; border-radius: 8px; color: inherit; font: inherit; cursor: pointer; }
+button span { display: block; font-size: .8rem; margin-top: 4px; } button[aria-pressed="true"] { background: #17516b; border: 2px solid #8cdef6; }
+button:disabled { opacity: .45; cursor: not-allowed; } button:focus-visible, input:focus-visible { outline: 3px solid #ffce70; outline-offset: 3px; }
+.center { display: grid; place-items: center; font-size: .75rem; color: #9cacbf; } .rotation { display: flex; gap: 8px; margin: 12px 0 20px; } .rotation button { flex: 1; }
+label { display: block; line-height: 1.5; } input[type="number"] { width: 100%; margin-top: 8px; border-radius: 6px; border: 1px solid #526b87; background: #0d1520; color: inherit; padding: 12px; font: inherit; }
+input[type="checkbox"] { width: 20px; height: 20px; vertical-align: middle; } #send { width: 100%; background: #17617a; font-weight: 600; } #result { overflow-wrap: anywhere; }
+dl { display: grid; grid-template-columns: 1fr 2fr; gap: 12px; } dt { color: #b3c1d2; } dd { margin: 0; overflow-wrap: anywhere; } pre { white-space: pre-wrap; overflow-wrap: anywhere; background: #0d1520; padding: 12px; border-radius: 8px; }
+[hidden] { display: none !important; } @media (max-width: 420px) { section { padding: 14px; } button { padding: 8px; } .badge { font-size: .8rem; } }
