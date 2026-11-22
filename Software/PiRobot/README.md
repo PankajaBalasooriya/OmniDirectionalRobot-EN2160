@@ -2,6 +2,7 @@
 
 For the complete operator walkthrough, see [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md).
 For tested links and remaining hardware gaps, see [CONNECTION_VERIFICATION.md](CONNECTION_VERIFICATION.md).
+For optional Pi boot sensing and simulation UI services, see [AUTO_START.md](AUTO_START.md).
 
 Target: **Ubuntu 24.04 LTS arm64 + ROS 2 Jazzy** on Raspberry Pi 5.
 Laptop: Ubuntu 24.04 + Jazzy + RViz. The Pi runs the C1 and the browser backend;

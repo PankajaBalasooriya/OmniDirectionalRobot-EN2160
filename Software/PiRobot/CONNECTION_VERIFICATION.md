@@ -89,3 +89,20 @@ No old SAM3X main-controller bridge is needed for the new backend's two-byte for
 6. Focused firmware safety fixes and matching backend support before powered motion.
 
 See [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md) for the deployment sequence.
+
+## Automatic-startup verification (2026-11-22)
+
+- `tools/services.py` generates system units targeting `multi-user.target`: no login is required.
+- Native `systemd-analyze verify` accepts both generated units.
+- Installer defaults to dry-run and refuses missing prepared files, unapproved mounts, root service
+  users, symlink unit targets, and updates under active units. Changed unit files are backed up.
+- Boot UI starts the existing backend in simulation, with no `--uart`, `--live`, or hardware-motion
+  flag. It does not access the motor board. Browser access remains through the SSH tunnel.
+- Lidar service restarts sensing after process exit with a 5-second delay; TF/driver exits stop the
+  whole launch. Explicit systemctl stop does not restart it. A live-but-stalled driver is not
+  automatically detected; fresh /scan verification remains required.
+- Mount YAML syntax errors are now reported as readable validation errors.
+- 19 deployment/launcher/service tests, 8 mount tests, and 14 backend tests pass, plus UI checks.
+- Services were not installed/enabled on this laptop. No Pi SSH address or configured native Pi
+  environment was provided; actual installation, reboot startup, permissions and scan publication
+  after boot remain unverified. See [AUTO_START.md](AUTO_START.md) for the acceptance procedure.

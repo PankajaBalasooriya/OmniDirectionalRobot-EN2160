@@ -46,6 +46,13 @@ class MountTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             load_mount("relative.yaml")
 
+    def test_malformed_yaml_is_a_readable_error(self):
+        with tempfile.TemporaryDirectory() as directory:
+            config = Path(directory) / "mount.yaml"
+            config.write_text("mount_calibrated: [unterminated")
+            with self.assertRaisesRegex(ValueError, "Invalid mount YAML"):
+                load_mount(config)
+
     def test_serial_stable_alias(self):
         for port in ("/dev/serial/by-id/lidar", "/dev/serial/by-path/platform-usb"):
             self.assertEqual(validate_serial_port(port), port)

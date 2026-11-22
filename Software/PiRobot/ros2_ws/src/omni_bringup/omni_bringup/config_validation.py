@@ -27,8 +27,11 @@ def load_mount(path):
     path = Path(path)
     if not path.is_absolute():
         raise ValueError("mount_config must be an absolute path")
-    with path.open(encoding="utf-8") as stream:
-        return validate_mount(yaml.safe_load(stream))
+    try:
+        with path.open(encoding="utf-8") as stream:
+            return validate_mount(yaml.safe_load(stream))
+    except yaml.YAMLError as exc:
+        raise ValueError(f"Invalid mount YAML: {exc}") from exc
 
 
 def validate_serial_port(port):

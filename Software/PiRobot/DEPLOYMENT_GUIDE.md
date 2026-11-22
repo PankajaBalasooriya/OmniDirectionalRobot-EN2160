@@ -573,9 +573,10 @@ Software compilation and mocked tests alone cannot satisfy this gate.
 
 6. Wait for shutdown before removing Pi power.
 
-Closing RViz does not stop the Pi lidar driver. No boot-time services or automatic motor arming
-are installed by the current tools. Add unattended services only after supervised operation is
-reliable; keep motion disabled on boot and require deliberate operator arming.
+Closing RViz does not stop the Pi lidar driver. Optional boot services for sensing and the
+simulation UI are now available: follow [AUTO_START.md](AUTO_START.md) after manual bringup passes.
+They are not installed by ordinary preparation or cloning, never open the motor UART, and never
+arm motors. Native Pi installation and a reboot acceptance check must still be performed.
 
 ## 14. Troubleshooting
 
@@ -590,7 +591,7 @@ reliable; keep motion disabled on boot and require deliberate operator arming.
 | Wrong serial device after reboot | Use C1 by-id/by-path alias; verify motor header routing separately |
 | C1 health/query fails | Correct adapter, 460800 baud, USB cable/power, exclusive ownership |
 | Mount launch refused | Enter measured xyz/rpy, strict YAML booleans/numbers, and approval flag |
-| Malformed mount YAML traceback | Correct indentation/syntax; current preflight may show a traceback rather than a friendly error |
+| Invalid mount YAML error | Correct indentation/syntax and finite numeric values; YAML syntax errors are reported as readable validation errors |
 | RViz sees no `/scan` | Driver logs, domain ID, LAN discovery, firewall/client isolation |
 | RViz transform error | `base_link → laser` publisher and matching frame names |
 | Scans rotated/mirrored | Verify physical scan-frame orientation and measured yaw; do not invent offsets |
